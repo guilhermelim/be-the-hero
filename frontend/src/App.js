@@ -1,18 +1,10 @@
 import React, { useState } from 'react';
-import Header from './Header';
-
+import Routes from './routes';
+import './global.css';
 function App() {
-  const [counter, setCounter] = useState(0);
-
-  function increment(){
-    setCounter(counter+1);
-  }
 
   return (
-    <div>
-      <Header title="Semana OmniStack 11.0">Contador: {counter}</Header>
-      <button onClick={increment}>Incrementar</button>
-    </div>
+    <Routes />
   );
 }
 
